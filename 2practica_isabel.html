@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="https://www.iesalandalus.org/planDeCentro/ProyectoEducativo/logo-ies2.png" />
+    <link rel="stylesheet" href="css/estilo.css"> 
+    <meta name="keywords" content="Valorant, jett , sage , competitivo , gekko , personajes, characters"> <!--//!Palabras clave--> 
+    <meta name="Author" content="Sergio Gallegos Guerrero">
+    <meta name="Description" content="Pagina web con la informacion de las paginas oficiales de valorant">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist 2/css/bootstrap.min.css">
+    
+    <title>Practica2</title>
+</head>
+    <body>
+
+     
+
+  <div class="container-fluid">
+
+<header> <!--Todo lo que necesitamos meter en la cabecera y que necesite los buscadores se recomienda poner un h1-->
+<!--Sergio Gallegos Guerrero-->
+</header>
+   
+<nav class="navbar sticky-top bg-white navbar-expand-lg">
+  <div class="container-fluid  p-2">
+    <!-- ? Añadir imagen -->
+    <a class="navbar-brand ms-2" href="#">
+      <img src="img/Logo I.png" alt="Bootstrap" width="30" height="30">
+    </a>
+    <!-- ? boton hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Noticias
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Últimas noticias</a></li>
+            <li><a class="dropdown-item" href="#">Noticias Destacadas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nosotros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">La empresa</a></li>
+            <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contacto
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">¿Dónde estamos?</a></li>
+            <li><a class="dropdown-item" href="#">Servicio al cliente</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- ? Para que este en la barra de navegacion en pantallas pequeñas -->
+    <div class="d-flex">
+      <!-- * Boton con la modal para el login -->
+                                                                      <!-- ? data-bs-targe id conectada con la modal login  -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginstaticBackdrop">
+        Login
+      </button>
+      <!-- ?  Boton con la modal para el registro -->
+                                                                            <!-- ? ancla con la id de la modal RegistrostaticBackdrop  -->
+      <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#RegistrostaticBackdrop">
+        Registro
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- todo Carrousel de imagenes -->
+
+<div class="container my-3">
+  <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <!--? 9 columnas a partir de pantallas medianas. -->
+    <div class="carousel-inner col-md-9">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/l1.jpeg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption  d-block mb-2">
+          <h5 class="fw-bold">Playa y barranco del Playazo de Rodalquilar a orillas del mar Mediterráneo en Almería, Andalucía, España.</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/l5.jpeg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption  d-block">
+          <h5 class="fw-bold">Vista panorámica de un hermoso mar cerca de las montañas en Almería, España</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="img/l6.jpeg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption  d-block">
+          <h5 class="fw-bold">Hermosa playa de la localidad de San José en el parque natural de Cabo de Gata, Níjar, Andalucía. </h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="img/l4.jpeg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption  d-block">
+          <h5 class="fw-bold">Playa de Monsul del Parque Natural de Cabo de Gata, San José, Almería. España</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- todo FIN Carrousel de imagenes -->
+
+    <main>
+
+
+      <h1 class="text-center text-white p-2 azul ">Cursos Ofertados</h1>
+
+      <!-- todo cards -->
+     
+      <div class="container my-3"> <!-- ? "container" (para dejar margen de izquierda y derecha) y my-3 para dejar margen arriba y abajo -->
+        <div class="card-group">
+          <div class="card shadow-html col-sm-3">
+            <img class="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true" data-bs-title="<strong>¡Transforma tu futuro!</strong> <br> Aprende <em>HTML</em> con nuestro curso intensivo. <br> ✅ Diseños web modernos <br> ✅ Proyectos reales <br> ✅ Soporte experto <br> <u>Inscríbete ahora y comienza tu viaje en el desarrollo web.</u>" src="img/HTML5.png" alt="Imagen logo HTML">
+
+            <div class="card-body">
+              <h5 class="card-title">Curso HTML5</h5>
+              <p class="card-text">Haz tu web de manera fácil</p>
+              <p class="card-text"><small class="text-body-secondary">El lenguage de páginas Web</small></p>
+            </div>
+          </div>
+          <div class="card shadow-css col-sm-3">
+            <img data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" data-bs-title="<strong>Domina el Arte del Diseño Web</strong> <br> Con nuestro curso avanzado de <em>CSS</em>. <br> ✅ Estilos visuales impactantes <br> ✅ Animaciones dinámicas <br> ✅ Responsive Design <br> <u>¡Eleva tus habilidades de diseño al próximo nivel!</u>" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/500px-CSS3_logo_and_wordmark.svg.png" class="mt-2" alt="">
+
+            <div class="card-body">
+              <h5 class="card-title">Curso CSS3</h5>
+              <p class="card-text">Toda la potencia de CSS3</p>
+              <p class="card-text"><small class="text-body-secondary">La potencia de estilos a tu alcance</small></p>
+            </div>
+          </div>
+          <div class="card shadow-boot col-sm-3">
+            <img src="img/boo.jpeg" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="left" data-bs-title="<strong>Acelera tu Desarrollo Web</strong> <br> Aprende <em>Bootstrap</em> y crea sitios web responsivos. <br> ✅ Diseño adaptativo <br> ✅ Componentes reutilizables <br> ✅ Interactividad avanzada <br> <u>Únete ahora y domina Bootstrap desde cero.</u>" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Curso BootStrapt</h5>
+              <p class="card-text">Maqueta y da vida a tu Web</p>
+              <p class="card-text"><small class="text-body-secondary">Crea una web fácil y sencilla</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- todo Fin cards -->
+
+      
+      <h1 class="text-center text-white text-capitalize p-2 azul ">¿Quieres hablar con nosotros?</h1>
+
+      <!-- todo Comienzo de navs y tabs -->
+     <div class="container">
+      <div role="tabpanel" aria-orientation="vertical">
+        <!-- List group -->
+        <div class="list-group w-50" id="myList" role="tablist">
+          <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home" role="tab">Contactar</a>
+          <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile" role="tab">Sugerencia</a>
+          <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages" role="tab">Empresas</a>
+        </div>
+      
+        <!-- Tab panes -->
+          <div class="tab-content">
+
+            <div class="tab-pane active" id="home" role="tabpanel">
+              <!-- ? Formulario de contacto -->
+              <form class=" needs-validation " novalidate>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label fw-bold" aria-label="Nombre" aria-required="true">Nombre:</label>
+                  <input placeholder="Introduce tu nombre" type="text" class="form-control w-50" id="nombre" required minlength="2" aria-label="Nombre" aria-required="true">
+                  <div class="valid-feedback" aria-label="Nombre válido">
+                    Nombre válido
+                  </div>
+                  <div class="invalid-feedback" aria-label="Por favor, introduce un nombre válido">
+                    Por favor, introduce un nombre válido
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="problema" class="form-label fw-bold" aria-label="Tu problema" aria-required="true">Tu problema:</label>
+                  <div class="form-floating">
+                    <textarea class="form-control" minlength="2" placeholder="Leave a comment here" id="problema" style="height: 100px" aria-label="Detalla tu problema" aria-required="true" required></textarea>
+                    <div class="invalid-feedback" aria-label="Por favor, introduce un problema">
+                      Por favor, introduce un problema
+                    </div>
+                    <label for="floatingTextarea2">Detalla tu problema</label>
+                    <div class="invalid-feedback" aria-label="Por favor, introduce un problema">
+                      Por favor, introduce un problema
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit" class="mt-2 btn d-block btn-primary" aria-label="Registrarse">Enviar</button>
+                  </div>
+                </div>
+              </form> 
+
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel">Formulario de sugerencia</div>
+            <div class="tab-pane" id="messages" role="tabpanel">Formulario de empresas</div>
+        </div>
+      </div>
+     </div>
+      <!-- todo Fin Comienzo de navs y tabs -->
+
+      
+
+      <footer class=" gris p-3 text-center">
+        <div class="container ">
+          <div class="row mb-2">
+            <div class="col-12">
+              <span class="fw-bold">Sergio Gallegos Guerrero</span>
+              <!-- <img src="img/commons.png" style="height: 5%;" alt=""> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              Esta obra está bajo una <span class="text-primary fw-bold">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</span>.
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    
+       <!-- todo Modal para el login  -->
+                          <!-- ? Ancla con el boton login LoginstaticBackdrop -->
+       <div class="modal fade" id="LoginstaticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Iniciar sesion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+              <!-- ? Formulario -->
+              <!-- todo Metiendo validaciones para ello en el formulario definimos y la clase novalidate -->
+              <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label fw-bold" aria-label="Email" aria-required="true">Email:</label>
+                                                                                                                                                                  <!-- ? metemos la expresion regular para validar el correo -->
+                  <input type="email" class="form-control" placeholder="Introduce tu email" id="exampleInputEmail1" required aria-describedby="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|es|org|net)$" aria-label="Email" aria-required="true">
+                  <!-- ? Introducimos los errores o validaciones del correo -->
+                  <div class="valid-feedback" aria-label="Correo electrónico válido">
+                    Correo electrónico válido
+                  </div>
+                  <div class="invalid-feedback" aria-label="Por favor, introduce un correo electrónico válido para poder iniciar sesión.">
+                    Por favor, introduce un correo electrónico válido para poder iniciar sesión.
+                  </div>
+                  <!-- ? Fin de los errores o validaciones del correo -->
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label fw-bold" aria-label="Contraseña" aria-required="true">Contraseña</label>
+                                                                                                        <!-- ? Definimos la expresion para la contraseña -->
+                  <input type="password" placeholder="Introduce tu contraseña" class="form-control" id="exampleInputPassword1" pattern="^.{3,8}$" required aria-label="Contraseña" aria-required="true">
+                  <!-- ? Introducimos los errores o validaciones de la contraseña -->
+                  <div class="valid-feedback" aria-label="Contraseña válida">
+                    Contraseña válida
+                  </div>
+                  <div class="invalid-feedback" aria-label="La contraseña no ha sido introducida o es incorrecta. Por favor, verifica e inténtalo de nuevo">
+                    La contraseña no ha sido introducida o es incorrecta. Por favor, verifica e inténtalo de nuevo
+                  </div>
+                    <!-- ? Fin de los errores o validaciones de la contraseña -->
+                </div>
+                <!-- ? Div para mover el boton a la derecha -->
+                <!-- <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn  btn-primary">Entrar</button>
+                </div> -->
+              </div>
+               <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Cerrar">Salir</button>
+                <button type="submit" class="btn btn-success" aria-label="Iniciar sesión">Iniciar sesión</button>
+              </div>
+            </form>
+            <!-- ? Fin del formulario -->
+          </div>
+        </div>
+      </div>
+       <!-- todo FIN Modal para el login  -->
+
+      <!-- todo MODAL PARA REGISTRO -->
+
+      <div class="modal fade" id="RegistrostaticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <!--? Para que la modal este centrada modal-dialog-centered -->
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Registro</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+              <!-- ? Formulario con las validaciones -->
+              <form class=" needs-validation " novalidate>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label fw-bold" aria-label="Nombre" aria-required="true">Nombre:</label>
+                    <input placeholder="Introduce tu nombre" type="text" class="form-control" id="nombre" required minlength="2" aria-label="Nombre" aria-required="true">
+                    <div class="valid-feedback" aria-label="Nombre válido">
+                      Nombre válido
+                    </div>
+                    <div class="invalid-feedback" aria-label="Por favor, introduce un nombre válido">
+                      Por favor, introduce un nombre válido
+                    </div>
+                  </div>
+
+                  
+                <div class="mb-3">
+                  <label for="apellidos" class="form-label fw-bold" aria-label="Apellidos" aria-required="true">Apellidos:</label>
+                  <input placeholder="Introduce tus apellidos" type="text" class="form-control" id="apellidos" minlength="2" required aria-label="Apellidos" aria-required="true">
+                  <div class="valid-feedback" aria-label="Apellidos válidos">
+                    Apellidos válidos
+                  </div>
+                  <div class="invalid-feedback" aria-label="Por favor, introduce unos apellidos válidos">
+                    Por favor, introduce unos apellidos válidos
+                  </div>
+                </div>
+
+
+
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold" aria-label="Email" aria-required="true">Email:</label>
+                  <input type="email" class="form-control" placeholder="Introduce tu email" id="email" required aria-describedby="emailHelp" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|es|org|net)$" aria-label="Email" aria-required="true">
+                  <div class="valid-feedback" aria-label="Correo electrónico válido">
+                    Correo electrónico válido
+                  </div>
+                  <div class="invalid-feedback" aria-label="Por favor, introduce un correo electrónico válido para poder iniciar sesión.">
+                    Por favor, introduce un correo electrónico válido para poder iniciar sesión.
+                  </div>
+
+                <div class="mb-3">
+                  <label for="pass" class="form-label fw-bold" aria-label="Contraseña" aria-required="true">Contraseña</label>
+                  <!-- ? Definimos la expresion para la contraseña -->
+                  <input type="password" placeholder="Introduce tu contraseña" class="form-control" id="pass" pattern="^.{3,8}$" required aria-label="Contraseña" aria-required="true">
+                  <!-- ? Introducimos los errores o validaciones de la contraseña -->
+                  <div class="valid-feedback" aria-label="Contraseña válida">
+                    Contraseña válida
+                  </div>
+                  <div class="invalid-feedback" aria-label="La contraseña no ha sido introducida o es incorrecta. Por favor, verifica e inténtalo de nuevo">
+                    La contraseña no ha sido introducida o es incorrecta. Por favor, verifica e inténtalo de nuevo
+                  </div>
+                  <!-- ? Fin de los errores o validaciones de la contraseña -->
+                </div>
+
+                <div class="mb-3">
+                  <label for="sexo" class="form-label fw-bold" aria-label="Sexo" aria-required="true">Sexo:</label>
+                  <select class="form-select" aria-label="Default select example" required aria-label="Sexo" aria-required="true">
+                    <option value="" selected disabled>Elige una opción</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="mujer">Otro</option>
+                  </select>
+                  <div class="valid-feedback" aria-label="Sexo seleccionado">
+                    Sexo seleccionado
+                  </div>
+                  <div class="invalid-feedback" aria-label="Por favor, selecciona un sexo">
+                    Por favor, selecciona un sexo
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Cerrar">Salir</button>
+                <button type="submit" class="btn btn-primary" aria-label="Registrarse">Registrarse</button>
+              </div>
+            </form>
+            </div>
+        </div>
+      </div>
+      <!-- todo FIN MODAL PARA REGISTRO -->
+
+
+       
+    </main>
+
+    <!-- ? Se queda fijo en la parte inferior de la pagina porque he añadido fixed-bottom -->
+    <div class="alert alert-primary alert-dismissible fade show fixed-bottom" role="alert">
+      
+      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16"  role="img" aria-label="Warning:">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>
+      Aviso de Cookies. ¿Te has enterado?
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    </div>
+        <script src="bootstrap-5.3.2-dist 2/js/bootstrap.bundle.js"></script>
+        <script src="js/validacionRegistroLogin.js"></script> <!-- todo Script para validaciones del login y registrer -->
+        <script src="js/tooltips.js"></script>
+    </body>
+
+</html>

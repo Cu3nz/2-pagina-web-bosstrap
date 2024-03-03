@@ -1,0 +1,61 @@
+.azul{
+    background-color: #005BAE;
+}
+.text-azul{
+    color: #005BAE;
+}
+
+.naranja{
+    background-color: #FF8B03;
+}
+
+
+.gris{
+    background-color: rgba(125, 125, 125, 0.164);
+}
+
+.carousel-img {
+    height: 45vh; 
+    width: 100%;
+    object-fit: cover; /* Esto asegura que la imagen cubra el área sin perder su aspecto */
+  }
+
+  .card img {
+    padding: 10%;
+    height: 80%; /* Ajusta este valor a la altura que prefieras */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
+  }
+
+  .css{
+    height: 20%;
+  }
+
+.shadow-html:hover{animation:shadow-drop-center 1s linear both} @keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(243, 111, 3, 0.842)}}
+
+.shadow-css:hover {
+    animation: shadow-drop-center-css 1s linear both;
+}
+
+@keyframes shadow-drop-center-css {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+        box-shadow: 0 0 50px 0 rgba(41, 101, 241, 0.842);
+    }
+}
+
+.shadow-boot:hover {
+    animation: shadow-drop-center-boot 1s linear both;
+}
+
+@keyframes shadow-drop-center-boot {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+    100% {
+        box-shadow: 0 0 50px 0 rgba(121, 82, 179, 0.842);
+    }
+}
+  
+
